@@ -70,18 +70,18 @@ const App: () => Node = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
+          <Section title="Hola mundo desde React Native">
+            Desarrollado por <Text style={styles.highlight}>Juan Carlos Mena</Text> y
+            <Text style={styles.highlight}>José Carlos Menéndez</Text>
           </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
+          <Section title="Empezamos a desarrollar">
+            Si pulsas 2 veces la <Text style={styles.highlight}>R</Text> se recarga la página.
           </Section>
-          <Section title="Debug">
-            <DebugInstructions />
+          <Section title="Y aprenderemos React Native">
+            En cambio, si pulsas <Text style={styles.highlight}>Ctrl + M</Text> o agitas el móvil se recarga la página.
           </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
+          <Section title="Sin llorar mucho">
+            Porque es muy difícil :(
           </Section>
           <LearnMoreLinks />
         </View>
