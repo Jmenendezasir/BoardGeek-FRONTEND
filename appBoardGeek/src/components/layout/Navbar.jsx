@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import logo from '../../assets/logo.png'
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -65,20 +67,24 @@ export default function NavBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
+          <Box
             noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            BoardGeek
-          </Typography>
+            height='100'
+            sx={{flexGrow: 1, display: { xs: 'block', sm: 'block' } }}
+            >
+            <img src={logo}
+              noWrap
+              height='85'
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' } }}
+            />
+          </Box>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="Buscar..."
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
