@@ -68,7 +68,7 @@ export default function NavBar() {
             <MenuIcon />
           </IconButton>
           <Box
-            noWrap
+            no Wrap
             height='100'
             sx={{flexGrow: 1, display: { xs: 'block', sm: 'block' } }}
             >
